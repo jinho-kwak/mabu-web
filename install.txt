@@ -1,0 +1,4 @@
+npm install react-router-dom
+npm install react-responsive
+npm install react-scroll
+npm install react-router-dom@5.2.0
