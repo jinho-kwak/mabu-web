@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mabu-web/static/css/main.638f5fb1.css",
-    "main.js": "/mabu-web/static/js/main.26552acb.js",
-    "static/js/787.28cb0dcd.chunk.js": "/mabu-web/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/mabu-web/index.html",
-    "main.638f5fb1.css.map": "/mabu-web/static/css/main.638f5fb1.css.map",
-    "main.26552acb.js.map": "/mabu-web/static/js/main.26552acb.js.map",
-    "787.28cb0dcd.chunk.js.map": "/mabu-web/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/static/css/main.638f5fb1.css",
+    "main.js": "/static/js/main.b449cdec.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/index.html",
+    "main.638f5fb1.css.map": "/static/css/main.638f5fb1.css.map",
+    "main.b449cdec.js.map": "/static/js/main.b449cdec.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.638f5fb1.css",
-    "static/js/main.26552acb.js"
+    "static/js/main.b449cdec.js"
   ]
 }

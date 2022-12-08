@@ -74,7 +74,7 @@ const MainBoard = () => {
             outline:'0'
         },
       }
-    const url_path = ''
+    const url_path = 'http://xn--299as6voca478bs7ip4ijkdpxj.kr'
     return (
             <div style={bodystyle.maincontainer}>
                 <div style={bodystyle.innercontainer}>
