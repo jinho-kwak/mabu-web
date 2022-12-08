@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 
 import React from 'react';
-import { BrowserRouter as Router,Route } from 'react-router-dom';
+import { HashRouter as Router,Route } from 'react-router-dom';
 import MainBoard from "./Main";
 // import { BrowserRouter } from 'react-router-dom';
 function App() {
