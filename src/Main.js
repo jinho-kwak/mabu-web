@@ -1,4 +1,5 @@
 import * as React from "react";
+// import {useState} from "react";
 import NavBar from './NavBar';
 // import LazyLoad from './LazyLoad';
 import './css/mouse_event.css'
@@ -8,6 +9,8 @@ import ImageRenderer from './ImageRenderer';
 
 const MainBoard = () => {
 
+    // const [top, setTop] = useState('82%');
+    // const [left, setLeft] = useState('65%')
     const isTabletOrMobile = useMediaQuery({ maxWidth: 992 });
     const bodystyle={
         maincontainer:{
@@ -72,6 +75,27 @@ const MainBoard = () => {
             border:'0',
             outline:'0'
         },
+        // eventStyle:{
+        //     transition: '1s',
+        //     position:'fixed',
+        //     top:top,
+        //     left:left,
+        //     display:'flex',
+        //     alignItems:'center',
+		// 	justifyContent:'center',
+		// 	backgroundColor:'#103666',
+		// 	width:isTabletOrMobile?'20vw':'6vw',
+        //     height:isTabletOrMobile?'20vw':'6vw',
+		// 	// padding:'10%',
+        //     // margin:'10%',
+		// 	fontSize:isTabletOrMobile?'4.5vw':'0.9vw',
+		// 	color:"white",
+        //     outline:'0',
+		// 	borderWidth:'2px',
+		// 	borderRadius:isTabletOrMobile?'5vw':'2vw',
+		// 	borderStyle:'solid',
+		// 	borderColor:'black',
+        // }
     }
     return (
             <div style={bodystyle.maincontainer}>
@@ -95,46 +119,6 @@ const MainBoard = () => {
                             />
                         ))}
 
-                        {/* {src_info_list.map((row, index) => (
-                            <LazyLoad key={index} props={row} />
-                        ))} */}
-                        
-                        {/* <LazyLoad id ='Page1' style={bodystyle.eachimg} src={url_path+'/img/Page1.png'} alt="noImage"/>
-                        <LazyLoad id ='Page1-2' style={bodystyle.eachimg} src={url_path+'/img/Page1-2.png'} alt="noImage"/>
-                        <LazyLoad id ='Page1-3' style={bodystyle.eachimg} src={url_path+'/img/Page1-3.png'} alt="noImage"/>
-                        <LazyLoad id ='Page2' style={bodystyle.eachimg} src={url_path+'/img/Page2.png'} alt="noImage"/>
-                        <LazyLoad id ='Page2-2' style={bodystyle.eachimg} src={url_path+'/img/Page2-2.png'} alt="noImage"/>
-                        <LazyLoad id ='Page2-3' style={bodystyle.eachimg} src={url_path+'/img/Page2-3.png'} alt="noImage"/>
-                        <LazyLoad id ='Page3' style={bodystyle.eachimg} src={url_path+'/img/Page3.png'} alt="noImage"/>
-                        <LazyLoad id ='Page3-2' style={bodystyle.eachimg} src={url_path+'/img/Page3-2.png'} alt="noImage"/>
-                        <LazyLoad id ='Page4' style={bodystyle.eachimg} src={url_path+'/img/Page4.png'} alt="noImage"/>
-                        <LazyLoad id ='Page5-01' style={bodystyle.eachimg} src={url_path+'/img/Page5-01.png'} alt="noImage"/>
-                        <LazyLoad id ='Page5-02' style={bodystyle.eachimg} src={url_path+'/img/Page5-02.png'} alt="noImage"/>
-                        <LazyLoad id ='Page5-02-1' style={bodystyle.eachimg} src={url_path+'/gif/Page5-02-1.gif'}alt="noImage"/>
-                        <LazyLoad id ='Page5-03' style={bodystyle.eachimg} src={url_path+'/img/Page5-03.png'} alt="noImage"/>
-                        <LazyLoad id ='Page5-03-1' style={bodystyle.eachimg} src={url_path+'/gif/Page5-03-1.gif'}alt="noImage"/>
-                        <LazyLoad id ='Page5-03-2' style={bodystyle.eachimg} src={url_path+'/gif/Page5-03-2.gif'}alt="noImage"/>
-                        <LazyLoad id ='Page5-04' style={bodystyle.eachimg} src={url_path+'/img/Page5-04.png'} alt="noImage"/>
-                        <LazyLoad id ='Page5-04-1' style={bodystyle.eachimg} src={url_path+'/gif/Page5-04-1.gif'}alt="noImage"/>
-                        <LazyLoad id ='Page5-05' style={bodystyle.eachimg} src={url_path+'/img/Page5-05.png'}alt="noImage" />
-                        <LazyLoad id ='Page5-05-1' style={bodystyle.eachimg} src={url_path+'/gif/Page5-05-1.gif'}alt="noImage" />
-                        <LazyLoad id ='Page5-05-2' style={bodystyle.eachimg} src={url_path+'/gif/Page5-05-2.gif'}alt="noImage" />
-                        <LazyLoad id ='Page5-05-3' style={bodystyle.eachimg} src={url_path+'/gif/Page5-05-3.gif'}alt="noImage" />
-                        <LazyLoad id ='Page5-06' style={bodystyle.eachimg} src={url_path+'/img/Page5-06.png'}alt="noImage" />
-                        <LazyLoad id ='Page5-06-1' style={bodystyle.eachimg} src={url_path+'/gif/Page5-06-1.gif'}alt="noImage" />
-                        <LazyLoad id ='Page5-06-2' style={bodystyle.eachimg} src={url_path+'/gif/Page5-06-2.gif'}alt="noImage" />
-                        <LazyLoad id ='Page5-07' style={bodystyle.eachimg} src={url_path+'/img/Page5-07.png'}alt="noImage" />
-                        <LazyLoad id ='Page5-07-1' style={bodystyle.eachimg} src={url_path+'/gif/Page5-07-1.gif'}alt="noImage" />
-                        <LazyLoad id ='Page5-08' style={bodystyle.eachimg} src={url_path+'/img/Page5-08.png'}alt="noImage" />
-                        <LazyLoad id ='Page5-08-1' style={bodystyle.eachimg} src={url_path+'/gif/Page5-08-1.gif'}alt="noImage" />
-                        <LazyLoad id ='Page5-09' style={bodystyle.eachimg} src={url_path+'/img/Page5-09.png'}alt="noImage" />
-                        <LazyLoad id ='Page5-09-1' style={bodystyle.eachimg} src={url_path+'/gif/Page5-09-1.gif'}alt="noImage" />
-                        <LazyLoad id ='Page5-10' style={bodystyle.eachimg} src={url_path+'/img/Page5-10.png'}alt="noImage" />
-                        <LazyLoad id ='Page5-10-1' style={bodystyle.eachimg} src={url_path+'/gif/Page5-10-1.gif'}alt="noImage" />
-                        <LazyLoad id ='Page5-11' style={bodystyle.eachimg} src={url_path+'/img/Page5-11.png'}alt="noImage" />
-                        <LazyLoad id ='Page5-11-1' style={bodystyle.eachimg} src={url_path+'/gif/Page5-11-1.gif'}alt="noImage" />
-                        <LazyLoad id ='Page6' style={bodystyle.eachimg} src={url_path+'/img/Page6.png'}alt="noImage" />
-                        <LazyLoad id ='Page6-2' style={bodystyle.eachimg} src={url_path+'/img/Page6-2.png'}alt="noImage" /> */}
                     </div>
                     <div style={bodystyle.clickfield}>
                         <div style={bodystyle.innerclickfield}>
