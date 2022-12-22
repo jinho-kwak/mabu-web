@@ -47,31 +47,31 @@ const MainBoard = () => {
             // width:'0%',
             // backgroundColor:'blue'
         },
-        buttonstyle:{
-			display:'flex',
-            alignItems:'center',
-			justifyContent:'center',
-			backgroundColor:'#103666',
-			width:isTabletOrMobile?'20vw':'6vw',
-            height:isTabletOrMobile?'20vw':'6vw',
-			// padding:'10%',
-            // margin:'10%',
-			fontSize:isTabletOrMobile?'4.5vw':'0.9vw',
-			color:"white",
-            outline:'0',
-			borderWidth:'2px',
-			borderRadius:isTabletOrMobile?'5vw':'2vw',
-			borderStyle:'solid',
-			borderColor:'black',
-        },
+        // buttonstyle:{
+		// 	display:'flex',
+        //     alignItems:'center',
+		// 	justifyContent:'center',
+		// 	backgroundColor:'#103666',
+		// 	width:isTabletOrMobile?'20vw':'6vw',
+        //     height:isTabletOrMobile?'20vw':'6vw',
+		// 	// padding:'10%',
+        //     // margin:'10%',
+		// 	fontSize:isTabletOrMobile?'4.5vw':'0.9vw',
+		// 	color:"white",
+        //     outline:'0',
+		// 	borderWidth:'2px',
+		// 	borderRadius:isTabletOrMobile?'5vw':'2vw',
+		// 	borderStyle:'solid',
+		// 	borderColor:'black',
+        // },
         kakaostyle:{
             display:'flex',
             alignItems:'center',
 			justifyContent:'center',
             backgroundColor:'transparent',
 			width:isTabletOrMobile?'15vw':'6vw',
-            height:isTabletOrMobile?'15vw':'6vw',
-			// padding:'10%',
+            height:isTabletOrMobile?'10vw':'4vw',
+            // margin:'0',
             border:'0',
             outline:'0'
         },
@@ -122,7 +122,7 @@ const MainBoard = () => {
                     </div>
                     <div style={bodystyle.clickfield}>
                         <div style={bodystyle.innerclickfield}>
-                            <button style={bodystyle.buttonstyle} className='textweightstyle' onClick={() => window.open("https://naver.me/FbizcvvN", '_blank')}>서비스 신청</button>
+                            <button style={bodystyle.kakaostyle} onClick={() => window.open("https://naver.me/FbizcvvN", '_blank')}><img style={{width:isTabletOrMobile?'200%':'150%'}} src={'/img/service.png'} alt='floating_btn'/></button>
                             <button style={bodystyle.kakaostyle} onClick={() => window.open('http://pf.kakao.com/_XQScT/chat', '_blank')}><img style={{width:isTabletOrMobile?'200%':'150%'}} src={url_path+'/img/kakaotalkchat.png'} alt='kakaochat'/></button>
                         </div>
 
